@@ -23,8 +23,8 @@ router.post("/create-checkout-session", async (req, res) => {
           quantity: item.quantity,
         };
       }),
-      success_url: "http://localhost:3000/success",
-      cancel_url: "http://localhost:3000/cancel",
+      success_url: "https://legendary-semolina-789f4f.netlify.app/success",
+      cancel_url: "https://legendary-semolina-789f4f.netlify.app/cancel",
     });
 
     res.json({ url: session.url });
