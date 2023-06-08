@@ -23,8 +23,8 @@ router.post("/create-checkout-session", async (req, res) => {
           quantity: item.quantity,
         };
       }),
-      success_url: "https://fastidious-zuccutto-c08a32.netlify.app/success",
-      cancel_url: "https://fastidious-zuccutto-c08a32.netlify.app/cancel",
+      success_url: "https://strong-cheesecake-01dc7d.netlify.app/success",
+      cancel_url: "https://strong-cheesecake-01dc7d.netlify.app/cancel",
     });
 
     res.json({ url: session.url });
