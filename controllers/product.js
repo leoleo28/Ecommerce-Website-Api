@@ -57,7 +57,8 @@ export const getProducts = async (req, res, next) => {
         categories: qCategory,
       });
     } else {
-      products = await Product.find();
+      // products = await Product.find();
+      products = await Product.find({ featured: true });
     }
     res.status(200).json(products);
   } catch (err) {
